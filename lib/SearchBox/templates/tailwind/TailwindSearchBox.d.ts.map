@@ -1,0 +1,1 @@
+{"version":3,"file":"TailwindSearchBox.d.ts","sourceRoot":"","sources":["../../../../src/SearchBox/templates/tailwind/TailwindSearchBox.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAwC,MAAM,OAAO,CAAC;AAC7D,OAAO,EACL,cAAc,EAEf,MAAM,iCAAiC,CAAC;AAGzC,QAAA,MAAM,iBAAiB,EAAE,KAAK,CAAC,EAAE,CAAC,cAAc,CA4a/C,CAAC;AAEF,eAAe,iBAAiB,CAAC"}
