@@ -1,0 +1,113 @@
+{
+  "name": "@samirify/searchbox",
+  "version": "1.0.0-alpha.2",
+  "description": "A powerful, customizable React search component with autocomplete, categories, and multiple themes",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "lib/searchbox.css",
+  "scss": "src/assets/scss/search-box.scss",
+  "scss:variables": "src/assets/scss/_variables.scss",
+  "scss:global": "src/assets/scss/_global.scss",
+  "files": [
+    "lib",
+    "src/assets/scss",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build:types && npm run build:webpack",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir lib",
+    "build:webpack": "webpack --config webpack.config.prod.js",
+    "dev": "webpack serve --mode development --open",
+    "start": "webpack serve --mode development --open",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,scss,css,json,md}",
+    "clean": "rm -rf lib dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samirify/searchbox.git"
+  },
+  "keywords": [
+    "react",
+    "search",
+    "autocomplete",
+    "component",
+    "typescript",
+    "tailwind",
+    "bootstrap"
+  ],
+  "author": {
+    "name": "Samir Ibrahim",
+    "email": "tech@samirify.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
+    "sass": "^1.32.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/plugin-transform-class-properties": "^7.27.1",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@eslint/js": "^9.0.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "dotenv-webpack": "^8.1.1",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "html-webpack-plugin": "^5.6.3",
+    "jest": "^30.0.5",
+    "jest-environment-jsdom": "^30.0.5",
+    "mini-css-extract-plugin": "^2.8.1",
+    "node-polyfill-webpack-plugin": "^4.1.0",
+    "postcss": "^8.4.0",
+    "postcss-loader": "^8.1.0",
+    "prettier": "^3.6.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "ts-jest": "^29.4.1",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.0.0",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./scss": "./src/assets/scss/search-box.scss",
+    "./scss/variables": "./src/assets/scss/_variables.scss",
+    "./scss/global": "./src/assets/scss/_global.scss",
+    "./css": "./lib/searchbox.css",
+    "./lib/searchbox.css": "./lib/searchbox.css"
+  },
+  "optionalDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "bootstrap": "^5.3.7",
+    "tailwindcss": "^3.4.17"
+  }
+}
