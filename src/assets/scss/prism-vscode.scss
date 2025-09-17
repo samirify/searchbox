@@ -1,0 +1,262 @@
+/**
+ * Prism.js VSCode Dark Theme
+ * Based on VSCode's Dark+ (default dark) theme
+ */
+
+[data-theme="vscode-dark"] {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #d4d4d4;
+    background: none;
+    font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #1e2a36;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+    white-space: normal;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: #6a9955;
+  }
+
+  .token.punctuation {
+    color: #d4d4d4;
+  }
+
+  .token.namespace {
+    opacity: 0.7;
+  }
+
+  .token.property,
+  .token.tag,
+  .token.boolean,
+  .token.number,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    color: #b5cea8;
+  }
+
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    color: #ce9178;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string,
+  .token.variable {
+    color: #d4d4d4;
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.function,
+  .token.class-name {
+    color: #dcdcaa;
+  }
+
+  .token.keyword {
+    color: #569cd6;
+  }
+
+  .token.regex,
+  .token.important {
+    color: #d16969;
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
+
+  /* TypeScript specific */
+  .token.keyword.typescript {
+    color: #569cd6;
+  }
+
+  .token.string.typescript {
+    color: #ce9178;
+  }
+
+  .token.comment.typescript {
+    color: #6a9955;
+  }
+
+  .token.function.typescript {
+    color: #dcdcaa;
+  }
+
+  .token.class-name.typescript {
+    color: #4ec9b0;
+  }
+
+  .token.variable.typescript {
+    color: #9cdcfe;
+  }
+
+  .token.parameter.typescript {
+    color: #9cdcfe;
+  }
+
+  .token.operator.typescript {
+    color: #d4d4d4;
+  }
+
+  .token.punctuation.typescript {
+    color: #d4d4d4;
+  }
+
+  .token.number.typescript {
+    color: #b5cea8;
+  }
+
+  .token.boolean.typescript {
+    color: #569cd6;
+  }
+
+  .token.null.typescript {
+    color: #569cd6;
+  }
+
+  .token.undefined.typescript {
+    color: #569cd6;
+  }
+
+  /* JSX/TSX specific */
+  .token.tag.jsx,
+  .token.tag.tsx {
+    color: #569cd6;
+  }
+
+  .token.tag-name.jsx,
+  .token.tag-name.tsx {
+    color: #569cd6;
+  }
+
+  .token.attr-name.jsx,
+  .token.attr-name.tsx {
+    color: #9cdcfe;
+  }
+
+  .token.attr-value.jsx,
+  .token.attr-value.tsx {
+    color: #ce9178;
+  }
+
+  .token.punctuation.jsx,
+  .token.punctuation.tsx {
+    color: #d4d4d4;
+  }
+
+  /* JSON specific */
+  .token.property.json {
+    color: #9cdcfe;
+  }
+
+  .token.string.json {
+    color: #ce9178;
+  }
+
+  .token.number.json {
+    color: #b5cea8;
+  }
+
+  .token.boolean.json {
+    color: #569cd6;
+  }
+
+  .token.null.json {
+    color: #569cd6;
+  }
+
+  /* Bash specific */
+  .token.keyword.bash {
+    color: #569cd6;
+  }
+
+  .token.function.bash {
+    color: #dcdcaa;
+  }
+
+  .token.string.bash {
+    color: #ce9178;
+  }
+
+  .token.variable.bash {
+    color: #9cdcfe;
+  }
+
+  /* Line numbers */
+  .line-numbers .line-numbers-rows {
+    border-right: 1px solid #3c3c3c;
+  }
+
+  .line-numbers-rows > span:before {
+    color: #858585;
+  }
+
+  /* Selection */
+  .token::selection,
+  .token *::selection {
+    background-color: #264f78;
+    color: inherit;
+    text-shadow: none;
+  }
+
+  /* Inline code */
+  .token.inline-code {
+    background-color: #2d2d30;
+    color: #d4d4d4;
+    padding: 0.1em 0.3em;
+    border-radius: 0.2em;
+    font-size: 0.9em;
+  }
+} 
