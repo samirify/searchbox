@@ -1,0 +1,12 @@
+.bootstrap-searchbox[data-bs-theme="dark"] {
+  /* Match Default theme dark palette inside SearchBox demo */
+  --bs-dark-bg-subtle: #1f2937;      /* container background for .bg-dark-subtle */
+  --bs-border-color: #374151;        /* generic border color */
+  --bs-dark-border-subtle: #374151;  /* .border-dark-subtle */
+  --bs-secondary-border-subtle: #374151; /* .border-secondary-subtle */
+  --bs-body-color: #f9fafb;          /* text */
+  --bs-dropdown-bg: #1f2937;         /* dropdown background */
+  --bs-dropdown-border-color: #374151; /* dropdown border */
+}
+
+
